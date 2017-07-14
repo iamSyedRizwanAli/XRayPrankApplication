@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1875d1"
+    tools:context="pk.edu.pucit.xrayprank.Activity3">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#3e50b4"
+        android:weightSum="7"
+        >
+        
+        <ImageView
+            android:id="@+id/act3_backButton"
+            android:src="@drawable/back_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/result"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:id="@+id/reloadButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/reload"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/prankMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/got_it"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/got_it"
+            android:src="@drawable/got_it_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            style="@style/ButtonStyle"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

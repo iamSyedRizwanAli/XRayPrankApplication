@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#1875d1"
+    tools:context="pk.edu.pucit.xrayprank.Activity4">
+
+    <ImageView
+        android:id="@+id/title_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/instructions_text"/>
+
+    <ScrollView
+        android:layout_below="@+id/title_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act4_okButton">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All you have got to do is click 'Start' button, and then wait for the application to load XRAY functionalities. \n\nAfterwards when the XRAY screen is loaded, direct the camera of mobile to the part of body you want to XRAY. You will also be able to see Camera View on the screen. Then click 'Do XRAY' \n\n The application will then do further processing and will show RESULTS on a new screen."
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/act4_okButton"
+        style="@style/ButtonStyle"
+        android:src="@drawable/okay"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
